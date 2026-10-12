@@ -1,0 +1,4 @@
+interface:
+  display_name: "Game & App UI Image2"
+  short_description: "Create game and app UI mockups with ChatGPT Images 2"
+  default_prompt: "Use ChatGPT Images 2 to create a polished UI mockup or raster UI asset for my game or app."
