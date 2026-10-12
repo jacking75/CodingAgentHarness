@@ -2,6 +2,8 @@
 
 `CodingAgentHarness`는 코딩 에이전트가 프로젝트 작업 중 읽고 참조할 수 있는 스킬, 에이전트 역할 문서, 구현 가이드를 모아 둔 GitHub Pages 저장소다. 이 저장소 자체는 실행 애플리케이션이 아니며, 각 자료는 필요한 프로젝트로 선택적으로 복사하거나 링크해 사용한다.
 
+웹 카탈로그: [https://jacking75.github.io/CodingAgentHarness](https://jacking75.github.io/CodingAgentHarness)
+
 ## 시작하기
 
 1. 아래 카탈로그에서 작업에 맞는 자료를 찾는다.
