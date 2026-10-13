@@ -27,6 +27,18 @@
 
 각 폴더의 세부 적용 조건, 설치 방법, 제약 사항은 해당 폴더의 문서를 기준으로 한다.
 
+## Google Cloud 작업
+
+Google Cloud를 사용하는 프로젝트에서는 Google의 [google/skills](https://github.com/google/skills)에서 작업에 맞는 스킬을 선택해 사용한다. 구현·설정·배포·문제 해결에 착수하기 전에 해당 스킬의 `SKILL.md` 전체와 필요한 참조 문서를 읽고 적용한다.
+
+설치가 필요한 경우 원본 저장소의 안내에 따라 다음 명령을 사용한다. 이 명령은 Node.js의 `npx`가 필요하며, 설치 과정에서 필요한 스킬, 대상 에이전트, 설치 범위(프로젝트 또는 전역)를 선택한다.
+
+```powershell
+npx skills add google/skills
+```
+
+최신 스킬 목록과 설치 방법은 [원본 README](https://github.com/google/skills#readme)를 기준으로 한다. 적용할 때는 대상 프로젝트의 기존 지침과 승인·검증 절차를 따른다.
+
 ## 사용 원칙
 
 - 스킬은 설명과 요청이 명확히 일치할 때만 선택한다.
