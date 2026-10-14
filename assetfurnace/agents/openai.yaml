@@ -1,0 +1,4 @@
+interface:
+  display_name: "AssetFurnace 로컬 3D"
+  short_description: "사진에서 텍스처 3D 생성 작업을 요청하고 진행 상태와 결과 파일을 검증"
+  default_prompt: "Use $assetfurnace to turn my reference image into a textured 3D GLB using the installed local Pixal3D backend."

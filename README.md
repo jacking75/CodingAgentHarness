@@ -23,6 +23,7 @@
 | [`monogame/`](monogame/) | 역할 문서 | MonoGame 아키텍처, 그래픽, 입력, 물리, 오디오 등 역할별 작업 지침 |
 | [`Nextjs_Threejs/`](Nextjs_Threejs/) | 참조 문서 | Next.js와 Three.js 작업 지침 |
 | [`game-app-ui-image2-main/`](game-app-ui-image2-main/) | 스킬 묶음 | 이미지 생성 도구를 이용한 게임·앱 UI 목업 및 래스터 자산 제작 |
+| [`assetfurnace/`](assetfurnace/) | 스킬 | 로컬 AssetFurnace·Pixal3D 기반 사진→텍스처 GLB 생성, 진행 조회와 결과 검증 |
 | [`mysql8-skills-main/`](mysql8-skills-main/) | 스킬 묶음 | MySQL 8 설계, 잠금, 쿼리, 마이그레이션, 백업·복구 검토 |
 | [`apps-script-drive-file-scoped-storage.md`](apps-script-drive-file-scoped-storage.md) | 참조 문서 | Google Apps Script 기반 파일 범위 Drive 저장소 설계 |
 
@@ -68,6 +69,7 @@ CodingAgentHarness/
 ├── ms-agent-framework/               # Microsoft Agent Framework 스킬
 ├── monogame/                         # MonoGame 역할별 지침
 ├── game-app-ui-image2-main/          # 게임·앱 UI 이미지 스킬
+├── assetfurnace/                    # 로컬 사진→3D 생성 스킬
 ├── mysql8-skills-main/               # MySQL 8 스킬 묶음
 └── *.md                              # 독립 참조 문서
 ```
