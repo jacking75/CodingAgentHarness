@@ -17,6 +17,7 @@
 
 | 경로 | 종류 | 용도 |
 | --- | --- | --- |
+| [`개발-지침과-팁-1.md`](개발-지침과-팁-1.md) | 사용자 지침 | 계속 갱신하는 코드 구현·단위 테스트 지침과 문서 일련번호 규칙 |
 | [`csharpier/`](csharpier/) | 스킬 | C# 코드 포맷팅과 CSharpier 설정·운영 |
 | [`ms-agent-framework/`](ms-agent-framework/) | 통합 스킬 묶음 | Microsoft Agent Framework 기반 C# 에이전트, Provider, 워크플로, RAG, MCP/A2A 구현 패턴 |
 | [`monogame/`](monogame/) | 역할 문서 | MonoGame 아키텍처, 그래픽, 입력, 물리, 오디오 등 역할별 작업 지침 |
@@ -26,6 +27,16 @@
 | [`apps-script-drive-file-scoped-storage.md`](apps-script-drive-file-scoped-storage.md) | 참조 문서 | Google Apps Script 기반 파일 범위 Drive 저장소 설계 |
 
 각 폴더의 세부 적용 조건, 설치 방법, 제약 사항은 해당 폴더의 문서를 기준으로 한다.
+
+## 웹에서 문서 읽기
+
+웹 카탈로그의 마크다운 링크는 [공용 문서 뷰어](document-viewer-2.html)를 통해 제목, 목록, 표, 코드 블록과 목차를 표시한다. [1번 문서 읽기](document-viewer-2.html?doc=개발-지침과-팁-1.md)에서 개발 지침과 팁을 확인한다. 뷰어 상단의 `마크다운 원본` 링크로 원본 파일도 열 수 있다.
+
+내용을 바꿀 때는 해당 `.md` 파일만 수정한다. 변경 내용을 GitHub Pages에 배포한 뒤 뷰어를 새로 열거나 새로고침하면 갱신한 원본을 불러온다. 문서마다 별도의 HTML을 만들 필요가 없다.
+
+다른 마크다운 문서는 `document-viewer-2.html?doc=폴더/문서.md`로 연결한다. 문서 안의 상대 링크와 이미지는 원본 문서의 폴더를 기준으로 해석하며, 저장소 안의 다른 마크다운 문서도 같은 뷰어로 열린다.
+
+Marked `18.1.1`과 DOMPurify `3.4.17`의 브라우저 배포 파일을 `assets/vendor/`에 포함해 외부 CDN 없이 표시한다. 각 배포 파일의 원본 라이선스는 같은 폴더의 `LICENSE`에 보존한다. HTML로 변환한 문서는 DOMPurify로 정리한 뒤 표시한다.
 
 ## Google Cloud 작업
 

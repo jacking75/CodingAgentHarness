@@ -22,7 +22,7 @@
       <nav aria-label="주요 메뉴">
         <a href="#catalog">카탈로그</a>
         <a href="#how-to-use">사용 방법</a>
-        <a href="README.md">README</a>
+        <a href="document-viewer-2.html?doc=README.md">README</a>
       </nav>
     </header>
 
@@ -36,10 +36,10 @@
         </p>
         <div class="hero-actions">
           <a class="button button-primary" href="#catalog">자료 둘러보기 <span aria-hidden="true">↓</span></a>
-          <a class="button button-secondary" href="AGNNTS.md">에이전트 작업 규칙</a>
+          <a class="button button-secondary" href="document-viewer-2.html?doc=AGNNTS.md">에이전트 작업 규칙</a>
         </div>
         <dl class="hero-stats" aria-label="카탈로그 요약">
-          <div><dt>7</dt><dd>주요 자료 묶음</dd></div>
+          <div><dt>8</dt><dd>주요 자료 묶음</dd></div>
           <div><dt>3</dt><dd>자료 유형</dd></div>
           <div><dt>100%</dt><dd>정적 문서 배포</dd></div>
         </dl>
@@ -69,54 +69,61 @@
         </div>
 
         <div class="catalog-grid" id="catalog-grid">
+          <article class="resource-card" data-type="reference" data-search="개발 지침 팁 코드 구현 단위 테스트 테스트 원칙 문서 일련번호 1번 llm">
+            <div class="card-topline"><span class="tag tag-reference">사용자 지침</span><span class="card-index">문서 1</span></div>
+            <h3>개발 지침과 팁</h3>
+            <p>LLM이 다루기 쉬운 구현 구조, 실제 결함을 잡는 테스트, 문서 번호 규칙을 정리하고 계속 갱신한다.</p>
+            <a href="document-viewer-2.html?doc=개발-지침과-팁-1.md">1번 문서 읽기 <span aria-hidden="true">→</span></a>
+          </article>
+
           <article class="resource-card card-featured" data-type="skill" data-search="microsoft agent framework c# ai agent provider workflow rag mcp a2a">
             <div class="card-topline"><span class="tag tag-skill">통합 스킬</span><span class="card-index">01</span></div>
             <h3>Microsoft Agent Framework</h3>
             <p>C# AI 에이전트, Provider, 워크플로, RAG, MCP/A2A를 하나의 진입점에서 다룬다.</p>
             <ul><li>기본 에이전트·도구·세션·미들웨어</li><li>역할별 구현·리뷰·마이그레이션 지침</li></ul>
-            <a href="ms-agent-framework/README.md">통합 스킬 열기 <span aria-hidden="true">→</span></a>
+            <a href="document-viewer-2.html?doc=ms-agent-framework/README.md">통합 스킬 열기 <span aria-hidden="true">→</span></a>
           </article>
 
           <article class="resource-card" data-type="skill" data-search="csharpier c# dotnet format formatter code style">
             <div class="card-topline"><span class="tag tag-skill">스킬</span><span class="card-index">02</span></div>
             <h3>CSharpier</h3>
             <p>C# 코드 포맷터의 설치, 설정, 실행, 문제 해결을 다루는 실무 가이드다.</p>
-            <a href="csharpier/SKILL.md">스킬 열기 <span aria-hidden="true">→</span></a>
+            <a href="document-viewer-2.html?doc=csharpier/SKILL.md">스킬 열기 <span aria-hidden="true">→</span></a>
           </article>
 
           <article class="resource-card" data-type="agent" data-search="monogame game c# graphics input physics audio content debugger architect">
             <div class="card-topline"><span class="tag tag-agent">역할 문서</span><span class="card-index">03</span></div>
             <h3>MonoGame</h3>
             <p>아키텍처, 그래픽, 입력, 물리, 오디오, 콘텐츠, 디버깅 역할을 나눠 게임 작업을 안내한다.</p>
-            <a href="monogame/CLAUDE.md">역할 문서 열기 <span aria-hidden="true">→</span></a>
+            <a href="document-viewer-2.html?doc=monogame/CLAUDE.md">역할 문서 열기 <span aria-hidden="true">→</span></a>
           </article>
 
           <article class="resource-card" data-type="reference" data-search="next.js nextjs three.js threejs web frontend 3d">
             <div class="card-topline"><span class="tag tag-reference">참조 문서</span><span class="card-index">04</span></div>
             <h3>Next.js + Three.js</h3>
             <p>웹 애플리케이션과 3D 렌더링을 함께 다룰 때 참고하는 작업 지침이다.</p>
-            <a href="Nextjs_Threejs/CLAUDE.md">문서 열기 <span aria-hidden="true">→</span></a>
+            <a href="document-viewer-2.html?doc=Nextjs_Threejs/CLAUDE.md">문서 열기 <span aria-hidden="true">→</span></a>
           </article>
 
           <article class="resource-card" data-type="skill" data-search="game app ui image imagegen mockup hud asset design">
             <div class="card-topline"><span class="tag tag-skill">스킬 묶음</span><span class="card-index">05</span></div>
             <h3>게임·앱 UI Image</h3>
             <p>이미지 생성 도구로 UI 목업과 래스터 자산을 만들고 검수하는 워크플로다.</p>
-            <a href="game-app-ui-image2-main/README.md">스킬 묶음 열기 <span aria-hidden="true">→</span></a>
+            <a href="document-viewer-2.html?doc=game-app-ui-image2-main/README.md">스킬 묶음 열기 <span aria-hidden="true">→</span></a>
           </article>
 
           <article class="resource-card" data-type="skill" data-search="mysql 8 database db sql query schema migration transaction backup recovery">
             <div class="card-topline"><span class="tag tag-skill">스킬 묶음</span><span class="card-index">06</span></div>
             <h3>MySQL 8</h3>
             <p>스키마, 쿼리, 잠금, 마이그레이션, 백업·복구를 검토하는 데이터 접근 스킬 묶음이다.</p>
-            <a href="mysql8-skills-main/README.md">스킬 묶음 열기 <span aria-hidden="true">→</span></a>
+            <a href="document-viewer-2.html?doc=mysql8-skills-main/README.md">스킬 묶음 열기 <span aria-hidden="true">→</span></a>
           </article>
 
           <article class="resource-card" data-type="reference" data-search="google apps script drive file scoped storage api">
             <div class="card-topline"><span class="tag tag-reference">참조 문서</span><span class="card-index">07</span></div>
             <h3>Apps Script Drive Storage</h3>
             <p>Google Apps Script를 활용한 파일 범위 Drive 저장소 설계 참고 자료다.</p>
-            <a href="apps-script-drive-file-scoped-storage.md">문서 열기 <span aria-hidden="true">→</span></a>
+            <a href="document-viewer-2.html?doc=apps-script-drive-file-scoped-storage.md">문서 열기 <span aria-hidden="true">→</span></a>
           </article>
         </div>
         <p class="empty-state" id="empty-state" hidden>조건에 맞는 자료가 없다. 다른 검색어 또는 전체 필터를 사용한다.</p>

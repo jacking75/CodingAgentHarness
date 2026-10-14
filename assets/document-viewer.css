@@ -1,0 +1,49 @@
+/* 기존 카탈로그의 밝은 테마와 색상 토큰을 유지한다. */
+.document-page { font-family: Pretendard, "Noto Sans KR", "Segoe UI", sans-serif; }
+.document-page a:focus-visible, .document-page [tabindex]:focus-visible { outline: 3px solid var(--violet); outline-offset: 4px; }
+.document-shell { width: min(1180px, calc(100% - 3rem)); margin: 2rem auto 5rem; overflow: visible; }
+.document-meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 1rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--line); }
+.document-meta .eyebrow { margin: 0; }
+#document-path { color: var(--muted); overflow-wrap: anywhere; font-size: .85rem; }
+#document-status { margin: 2rem 0; color: var(--muted); }
+.document-error { padding: 1.5rem; border: 1px solid var(--line); background: var(--peach); border-radius: 12px; }
+.document-layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: clamp(2rem, 5vw, 5rem); margin-top: 2.5rem; align-items: start; }
+.document-toc { position: sticky; top: 2rem; max-height: calc(100vh - 4rem); overflow-y: auto; }
+.document-toc[hidden] { display: none; }
+.document-toc nav { display: block; font-size: .85rem; }
+.document-toc h2 { color: var(--ink); margin: 0 0 1rem; font-size: .9rem; letter-spacing: 0; }
+.document-toc ol { display: grid; gap: .75rem; margin: 0; padding: 0; list-style: none; }
+.document-toc li[data-level="3"] { padding-left: .8rem; }
+.document-toc li[data-level="4"], .document-toc li[data-level="5"], .document-toc li[data-level="6"] { padding-left: 1.6rem; }
+.document-toc a { display: block; overflow-wrap: anywhere; }
+.document-layout:has(.document-toc[hidden]) { grid-template-columns: minmax(0, 1fr); }
+.markdown-body { width: 100%; max-width: 76ch; min-width: 0; font-size: 1rem; line-height: 1.9; overflow-wrap: anywhere; }
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 { max-width: none; line-height: 1.35; text-wrap: balance; scroll-margin-top: 2rem; }
+.markdown-body h1 { margin: 0 0 1.5rem; font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -.055em; }
+.markdown-body h2 { margin: 3rem 0 1.1rem; padding-top: 1.5rem; border-top: 1px solid var(--line); font-size: 1.55rem; }
+.markdown-body h3 { margin: 2rem 0 .8rem; font-size: 1.15rem; }
+.markdown-body p, .markdown-body ul, .markdown-body ol, .markdown-body blockquote { margin: 0 0 1.25rem; }
+.markdown-body li + li { margin-top: .45rem; }
+.markdown-body a { color: var(--violet-deep); text-decoration: underline; text-underline-offset: .2em; }
+.markdown-body code, .markdown-body pre { font-family: Consolas, "Cascadia Code", monospace; }
+.markdown-body code { padding: .15rem .3rem; background: var(--lavender); border-radius: 4px; font-size: .88em; }
+.markdown-body pre { padding: 1.2rem; overflow-x: auto; background: var(--canvas); border: 1px solid var(--line); border-radius: 12px; line-height: 1.65; }
+.markdown-body pre code { padding: 0; background: transparent; white-space: pre; overflow-wrap: normal; }
+.markdown-body blockquote { padding: .8rem 1.2rem; border-left: 3px solid var(--violet); background: var(--canvas); color: var(--muted); }
+.markdown-body blockquote > :last-child { margin-bottom: 0; }
+.markdown-body img { max-width: 100%; height: auto; }
+.table-scroll { overflow-x: auto; margin-bottom: 1.5rem; }
+.markdown-body table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+.markdown-body th, .markdown-body td { padding: .7rem 1rem; border: 1px solid var(--line); text-align: left; }
+.markdown-body th { background: var(--canvas); }
+.markdown-body hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
+@media (max-width: 800px) {
+  .document-shell { width: calc(100% - 2rem); margin-top: 1rem; }
+  .document-layout { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+  .document-toc { position: static; max-height: none; padding: 1.2rem; background: var(--canvas); border-radius: 12px; }
+  .document-page nav { gap: .8rem; font-size: .8rem; }
+  .document-page nav a:nth-child(2) { display: block; }
+  .markdown-body { max-width: none; }
+}
+@media (max-width: 420px) { .document-page .site-header { height: auto; min-height: 80px; flex-wrap: wrap; padding: 1rem 0; gap: .8rem; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
