@@ -24,6 +24,7 @@
 | [`Nextjs_Threejs/`](Nextjs_Threejs/) | 참조 문서 | Next.js와 Three.js 작업 지침 |
 | [`game-app-ui-image2-main/`](game-app-ui-image2-main/) | 스킬 묶음 | 이미지 생성 도구를 이용한 게임·앱 UI 목업 및 래스터 자산 제작 |
 | [`assetfurnace/`](assetfurnace/) | 스킬 | 로컬 AssetFurnace·Pixal3D 기반 사진→텍스처 GLB 생성, 진행 조회와 결과 검증 |
+| [`windows-virtual-gamepad/README.md`](windows-virtual-gamepad/README.md) | 스킬 | Windows x64 가상 Xbox 360 게임패드 설치·진단·운영, Switch·Xbox 버튼 이름과 JSON 입력 타임라인, XInput 검증 |
 | [`mysql8-skills-main/`](mysql8-skills-main/) | 스킬 묶음 | MySQL 8 설계, 잠금, 쿼리, 마이그레이션, 백업·복구 검토 |
 | [`apps-script-drive-file-scoped-storage.md`](apps-script-drive-file-scoped-storage.md) | 참조 문서 | Google Apps Script 기반 파일 범위 Drive 저장소 설계 |
 
@@ -70,6 +71,7 @@ CodingAgentHarness/
 ├── monogame/                         # MonoGame 역할별 지침
 ├── game-app-ui-image2-main/          # 게임·앱 UI 이미지 스킬
 ├── assetfurnace/                    # 로컬 사진→3D 생성 스킬
+├── windows-virtual-gamepad/           # Windows 가상 게임패드 스킬
 ├── mysql8-skills-main/               # MySQL 8 스킬 묶음
 └── *.md                              # 독립 참조 문서
 ```
