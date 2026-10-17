@@ -18,6 +18,7 @@
 | 경로 | 종류 | 용도 |
 | --- | --- | --- |
 | [`개발-지침과-팁-1.md`](개발-지침과-팁-1.md) | 사용자 지침 | 계속 갱신하는 코드 구현·단위 테스트 지침과 문서 일련번호 규칙 |
+| [`google-workspace-cli-guide-3.md`](google-workspace-cli-guide-3.md) | 활용 가이드 | Google Workspace CLI의 장점, 설치·인증, Drive·Gmail·Calendar·Sheets 활용과 AI 에이전트 연동 |
 | [`csharpier/`](csharpier/) | 스킬 | C# 코드 포맷팅과 CSharpier 설정·운영 |
 | [`ms-agent-framework/`](ms-agent-framework/) | 통합 스킬 묶음 | Microsoft Agent Framework 기반 C# 에이전트, Provider, 워크플로, RAG, MCP/A2A 구현 패턴 |
 | [`monogame/`](monogame/) | 역할 문서 | MonoGame 아키텍처, 그래픽, 입력, 물리, 오디오 등 역할별 작업 지침 |
@@ -39,6 +40,12 @@
 다른 마크다운 문서는 `document-viewer-2.html?doc=폴더/문서.md`로 연결한다. 문서 안의 상대 링크와 이미지는 원본 문서의 폴더를 기준으로 해석하며, 저장소 안의 다른 마크다운 문서도 같은 뷰어로 열린다.
 
 Marked `18.1.1`과 DOMPurify `3.4.17`의 브라우저 배포 파일을 `assets/vendor/`에 포함해 외부 CDN 없이 표시한다. 각 배포 파일의 원본 라이선스는 같은 폴더의 `LICENSE`에 보존한다. HTML로 변환한 문서는 DOMPurify로 정리한 뒤 표시한다.
+
+## Google Workspace CLI로 업무 연결하기
+
+[Google Workspace CLI](https://github.com/googleworkspace/cli)는 `gws` 명령으로 Drive, Gmail, Calendar, Sheets 등 Workspace API를 사용하는 오픈 소스 도구다. 구조화된 JSON과 에이전트용 스킬을 제공해 반복 조회와 여러 서비스의 결과를 연결하는 작업에 유용하다. Google이 공식 지원하는 제품은 아니며, 사용하려는 서비스의 인증과 접근 권한이 필요하다.
+
+[소개와 활용 가이드 읽기](document-viewer-2.html?doc=google-workspace-cli-guide-3.md)에서 설치·OAuth 설정, 업무별 조회 예시, 실행 전 미리보기와 에이전트 요청 예시를 확인한다. [마크다운 원본](google-workspace-cli-guide-3.md)도 제공한다.
 
 ## Google Cloud 작업
 
